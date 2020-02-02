@@ -1,4 +1,4 @@
-.jumbotron{
+.header{
   margin-bottom: 4em;
   height: 500px;
   background-color: #09c!important;
@@ -6,27 +6,34 @@
 }
 
 .container{
-    background-color: #09c!important;
+   background-color: #09c!important;
+    font-size: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    justify-content: center;
 }
 
-.box1{
-     background-color: #09c!important;
-     height: 450px;
-}
-.person-wrappers{
- margin-bottom: 4em;
-}
-.img1{
-   widows: 90px;
-   height:auto;
-   float: left;
-  }
-  .profile{
-      float:right;
-     
-  }
 
-  
+img{
+  margin: 40px;
+  border-radius: 60px;
+   
+}
+
+.profile{
+   margin:10px;
+   justify-content: center;
+
+}
+.aboutUs{
+   display: grid;
+   grid-gap: 5px;
+   grid-template-columns: repeat(2,1fr);
+}
+
+Col{
+  margin-bottom: 3px;
+}
+
 .btn-primary{
   background-image:none;
   border-radius:0;
@@ -44,4 +51,14 @@ h3{
    text-align: center;
 }
 
+.post{
+  margin-top:500px ;
+}
+@media screen and (max-width :780px){
+  .aboutUs{
+    grid-template-columns: 1fr;
+  }
+
+  
+}
 

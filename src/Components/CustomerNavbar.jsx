@@ -12,18 +12,20 @@ class CustomerNavbar extends Component {
     return (
       <Navbar bg='primary' variant='dark' expand='lg'>
         <Navbar.Brand>SoftWare Enginneering Blog</Navbar.Brand>
-        <Nav className='ml-auto'>
-          <Nav.Link href='/' to="aboutUs">
-          
-            About me
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar">
+          <Nav className='ml-auto'>
+            <Nav.Link href='/' to="aboutUs">
+              About me
           </Nav.Link>
-          <Nav.Link href='/news' to="gallery">
-          Posts
+            <Nav.Link href='/news' to="gallery">
+              Posts
           </Nav.Link>
-          <Nav.Link  href='/about' to='posts'>
-            Gallery
+            <Nav.Link href='/about' to='posts'>
+              Gallery
           </Nav.Link>
-        </Nav>
+          </Nav>
+        </Navbar.Collapse>
       </Navbar>
     );
   }

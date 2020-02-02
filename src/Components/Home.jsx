@@ -19,47 +19,44 @@ class Home extends Component {
   render() {
     return (
       <Container>
-        <section className='aboutUs' id='aboutUs'>
-          <Jumbotron>
-            <Row>
-              <Col className='col-4'>
-                <LightSpeed left>
-                  <h1>React Reveal</h1>
-                  <img src={henry} alt='No Picture found' />
-                </LightSpeed>
-              </Col>
-              <Col className='col-8'>
-                <Roll right>
-                  <h1 className='text-center '> SoftWare Engineer</h1>
-                </Roll>
-                <Card className='profile'>
-                  <Bounce right>
-                    <Card.Body>
-                      Am Full Stack web developer ,I code in multiple Languages
-                      like Javascript,React,Node.js,Express.js and php. The blog
-                      site is Code in React js, Counterfeit Verification System is
-                      both a mobile and web application. The Mobile application
-                      helps users identify the authenticity of a product on market
-                      based on its QR code, report fake product on the market and
-                      offer on-time response about user query on manufacturers
-                      supply chains. The web application provides platform for
-                      enforcement team to register manufacturers company profiles,
-                      manufacturers register their suppliers and add products,
-                      allow manufacturers and the enforcement team track and
-                      control supply chains, and also allow them view product
-                      market analytics
+        <section className='aboutUs'>
+          <div>
+            <LightSpeed left>
+              <h1> Nice life</h1>
+              <img src={henry} alt='No Picture found' />
+            </LightSpeed>
+          </div>
+
+          <div>
+            <Roll right>
+              <h1> SoftWare Engineer</h1>
+            </Roll>
+            <Card className='profile'>
+              <Bounce right>
+                <Card.Body>
+                  Am Full Stack web developer ,I code in multiple Languages
+                  like Javascript,React,Node.js,Express.js and php. The blog
+                  site is Code in React js, Counterfeit Verification System is
+                  both a mobile and web application. The Mobile application
+                  helps users identify the authenticity of a product on market
+                  based on its QR code, report fake product on the market and
+                  offer on-time response about user query on manufacturers
+                  supply chains. The web application provides platform for
+                  enforcement team to register manufacturers company profiles,
+                  manufacturers register their suppliers and add products,
+                  allow manufacturers and the enforcement team track and
+                  control supply chains, and also allow them view product
+                  market analytics
                     <button class='btn btn-indigo rounded-circle '
-                        onclick="flip(event)"
-                      >
-                        Read more
+                    onclick="flip(event)"
+                  >
+                    Read more
                     </button>
-                    </Card.Body>
-                  </Bounce>
-                </Card>
-              </Col>
-            </Row>
-          </Jumbotron>
-        </section>
+                </Card.Body>
+              </Bounce>
+            </Card>
+          </div>
+         </section>
 
         <section className='posts' id='posts'>
           <h1 className='center'>Posts</h1>
@@ -116,7 +113,11 @@ class Home extends Component {
           </Row>
         </section>
 
-    
+        <section id="gallery">
+          <Row>
+            
+          </Row>
+        </section>
 
       </Container>
     );
