@@ -23,7 +23,7 @@ class Home extends Component {
           <div>
             <LightSpeed left>
               <h1> Nice life</h1>
-              <p>app still underdevelopment by the developer</p>
+              <p> blog still under-development by the developer</p>
               <img src={henry} alt='No Picture found' />
             </LightSpeed>
           </div>
