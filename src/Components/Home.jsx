@@ -1,128 +1,111 @@
 import React, { Component, Fragment } from 'react';
 import Roll from 'react-reveal/Roll';
 import Bounce from 'react-reveal/Bounce';
+
 import LightSpeed from 'react-reveal/LightSpeed';
-import { MDBBtn, MDBIcon } from 'mdbreact';
-import { Jumbotron, Container, Button, Card, Row, Col } from 'react-bootstrap';
+
+import { Jumbotron, Container, Image,Card, Button, Row, Col } from 'react-bootstrap';
+
 import './Home.css';
-import henry from '../Images/henry.jpg';
-import juuko1 from '../Images/juuko1.jpg';
-import y from '../Images/y.jpg';
-// import 89 from '../Images/89.jpg';
-import juuko from '../Images/juuko.jpg';
+import { SocialMediaIconsReact } from 'social-media-icons-react'
+import { Grid,Paper,makeStyles } from '@material-ui/core';
+import henry from '../Images/henry.PNG';
 
-class Home extends Component {
-  constructor(props) {
-    super(props);
-  }
+const useStyles = makeStyles((theme) => ({
+  root: {
+    flexGrow: 1,
+  },
+  paper: {
+    padding: theme.spacing(2),
+    textAlign: 'center',
+    color: theme.palette.text.secondary,
+  },
+}));
 
-  render() {
+export default function Home() {
+  
+    const classes = useStyles ()
     return (
-      <Container>
-        <section className='aboutUs'>
-          <div>
-            <LightSpeed left>
-              <h1> Nice life</h1>
-              <p> blog still under-development by the developer</p>
-              <img src={henry} alt='No Picture found' />
-            </LightSpeed>
+      <div>
+        <section className="header center">
+          <Image src={henry} className ="img" alt='No Picture found' roundedCircle />
+           
+          <h1>JUUKO HENRY</h1>
+          <h1> SoftWare Engineer</h1>
+          <div className="socialMedia">
+            <a>
+               <SocialMediaIconsReact  icon="twitter" />
+            </a>
+            <a>
+              <SocialMediaIconsReact className="social" icon="linkedin" />
+            </a>
+            <a>
+              <SocialMediaIconsReact className="social" icon="github" />
+            </a>
           </div>
 
-          <div>
-            <Roll right>
-              <h1> SoftWare Engineer</h1>
-            </Roll>
-            <Card className='profile'>
-              <Bounce right>
-                <Card.Body>
-                  Am Full Stack web developer ,I code in multiple Languages
-                  like Javascript,React,Node.js,Express.js and php. The blog
-                  site is Code in React js, Counterfeit Verification System is
-                  both a mobile and web application. The Mobile application
-                  helps users identify the authenticity of a product on market
-                  based on its QR code, report fake product on the market and
-                  offer on-time response about user query on manufacturers
-                  supply chains. The web application provides platform for
-                  enforcement team to register manufacturers company profiles,
-                  manufacturers register their suppliers and add products,
-                  allow manufacturers and the enforcement team track and
-                  control supply chains, and also allow them view product
-                  market analytics
-                    <button class='btn btn-indigo rounded-circle '
-                    onclick="flip(event)"
-                  >
-                    Read more
-                    </button>
-                </Card.Body>
-              </Bounce>
-            </Card>
-          </div>
-         </section>
+        </section>
+        <section>
+          <div className={classes.root}>
+            <Grid container spacing={3}>
 
-        <section className='posts' id='posts'>
-          <h1 className='center'>Posts</h1>
-          <Row>
-            <Col>
-              <Card style={{ width: '18rem' }}>
-                <MDBBtn tag='a' size='sm' floating gradient='purple'>
-                  <MDBIcon icon='bolt' />
-                </MDBBtn>
 
-                <Card.Body>
-                  <Card.Title>Feeds From Favorite Youtube Channel</Card.Title>
-                  <Card.Text>
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card's content.
-                  </Card.Text>
-                  <Button variant='primary'>Go somewhere</Button>
-                </Card.Body>
-              </Card>
-            </Col>
-            <Col>
-              <Card style={{ width: '18rem' }}>
-                <MDBBtn tag='a' size='sm' floating gradient='purple'>
-                  <MDBIcon icon='bolt' />
-                </MDBBtn>
-                <Card.Body>
-                  <Card.Title>Tweets From twiter</Card.Title>
-                  <Card.Text>
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card's content.
-                  </Card.Text>
-                  <Button variant='primary'>Go somewhere</Button>
-                </Card.Body>
-              </Card>
-            </Col>
-            <Col>
-              <Card style={{ width: '18rem' }}>
-                <MDBBtn tag='a' floating gradient='peach'>
-                  <MDBIcon icon='leaf' />
-                </MDBBtn>
-                <Card.Body>
-                  <Card.Title>
-                    News Feeds from Medium.com about Rect.js and Node.js and
-                    Express.js
-                  </Card.Title>
-                  <Card.Text>
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card's content.
-                  </Card.Text>
-                  <Button variant='primary'>Go somewhere</Button>
-                </Card.Body>
-              </Card>
-            </Col>
-          </Row>
+              <Grid item xs={12} sm={6}>
+                <Paper>
+                  <h3 className="center">About me</h3>
+                  <p className="center">
+                    <strong>I am </strong>a self-taught developer specializing in JavaScript, React, Redux, and React-Native. Most of my learning has been through building and deploying apps, pushing to GitHub and getting peer code reviews on LinkedIn.
+                  </p>
+
+                  <p className="center">Because of my contagious enthusiasm and passion for learning, I was chosen as a 2019 LinkedIn Top Voice for Web Development. I love the daily challenges of web development: writing quality code, learning new technologies, and solving complex problems.</p>
+
+                  <p className="center">I have been continuing to learn through freelance opportunities. A Squarespace site using Mailchimp and a React-Native app for sharing videos. I look forward to working on a team that is passionate about their product.
+
+                   </p>
+                </Paper>
+              </Grid>
+              
+              <Grid item xs={12} sm={6}>
+                <Paper>
+                  <h3 className="center"> Skills</h3>
+                  <h4 >Primary Experience</h4>
+                  <p >
+                    <ul>
+                      <li>JavaScript</li>
+                      <li> React</li>
+                      <li>Redux</li>
+                      <li>GitHub /Git</li>
+                      <li>python</li>
+                      <li>React native</li>
+                    </ul>
+                  </p>
+                  <h4>Secondary Experience</h4>
+                  <p >
+                    
+                    <ul>
+                      <li>RESTful Api</li>
+                      <li> Node .js</li>
+                      <li>Express .js</li>
+                      <li>Mongoose DB </li>
+                      <li>Bootstrap</li>
+                      <li>Flask (python)</li>
+                    </ul>
+                  </p>
+                 </Paper>
+                </Grid>
+
+            </Grid>
+          </div>  
+        </section>
+       
+        <section className="personalProjects">
+          <h1>Personal Projects</h1>
         </section>
 
-        <section id="gallery">
-          <Row>
-            
-          </Row>
-        </section>
+    </div>
 
-      </Container>
     );
   }
-}
 
-export default Home;
+
+

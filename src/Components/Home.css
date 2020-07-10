@@ -1,38 +1,27 @@
 .header{
   margin-bottom: 4em;
-  height: 500px;
-  background-color: #09c!important;
+  background-color: #000c!important;
   font-family: -apple-system, 'avenir next', avenir, roboto, noto, ubuntu, 'helvetica neue', helvetica, arial, sans-serif;
 }
-
-.container{
-   background-color: #09c!important;
-    font-size: 15px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    justify-content: center;
+.img{
+  margin-top: 30px;
+  margin-bottom: 20px;
+  width: 250px;
+  height:200px;
+}
+.socialMedia {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding:20px ;
+} 
+ 
+a  {
+  margin-left: 10px;
+  
 }
 
-
-img{
-  margin: 5px;
-  border-radius: 60px;
-   
-}
-
-.profile{
-   margin:5px;
-   justify-content: center;
-
-}
-.aboutUs{
-   display: grid;
-   grid-gap: 5px;
-   grid-template-columns: repeat(2,1fr);
-}
-
-Col{
-  margin-bottom: 3px;
-}
 
 .btn-primary{
   background-image:none;
@@ -61,4 +50,16 @@ h3{
 
   
 }
-
+.personalProjects{
+  background-color: black;
+}
+.socialMediaContainer{
+  background: #eee;
+  padding: 25px 50px;
+  
+}
+SocialMediaIconsReact{
+  margin: 5 1rem;
+  transition: transform 250ms;
+  display: inline-block;
+}
